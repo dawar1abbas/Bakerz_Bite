@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Bakerz Bite — Bakery & Café</title>
+<meta name="description" content="Bakerz Bite — a dark, editorial neighborhood bakery and café experience in Karachi.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="preloader"><div class="pre-logo">B<span>·</span>B</div><div class="pre-line"><i></i></div><small>BAKING SOMETHING GOOD</small></div>
+<header class="topbar">
+  <a class="brand navgo" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="Bakerz Bite logo"><span><b>Bakerz</b> Bite</span></a>
+  <nav class="main-nav"><a class="navgo " href="index.html">Home</a><a class="navgo " href="menu.html">Menu</a><a class="navgo " href="offers.html">Offers</a><a class="navgo " href="collection.html">Collection</a><a class="navgo " href="story.html">Our Story</a><a class="navgo active" href="contact.html">Contact</a></nav>
+  <button class="bag-open"><i class="bi bi-bag-heart"></i><span>Bag</span><b id="bagCount">0</b></button>
+  <button class="mobile-menu"><i class="bi bi-list"></i></button>
+</header>
+<div class="mobile-nav"><a class="navgo " href="index.html">Home</a><a class="navgo " href="menu.html">Menu</a><a class="navgo " href="offers.html">Offers</a><a class="navgo " href="collection.html">Collection</a><a class="navgo " href="story.html">Our Story</a><a class="navgo active" href="contact.html">Contact</a></div>
+<main>
+<section id="contact" class="page active-page contact-page">
+  <div class="contact-grid"><div class="contact-copy"><div class="kicker"><span></span> COME SAY HI</div><h2>Let's make<br>it a <em>good one.</em></h2><p>Questions, custom cakes, collaborations or just want to tell us your favourite cookie? We're listening.</p><div class="contact-lines"><div><i class="bi bi-geo-alt"></i><span><b>Find us</b>Karachi, Pakistan</span></div><div><i class="bi bi-clock"></i><span><b>Hours</b>Every day · 9:00 AM — 11:00 PM</span></div><div><i class="bi bi-telephone"></i><span><b>Call</b>+92 300 1234567</span></div><div><i class="bi bi-envelope"></i><span><b>Email</b>hello@bakerzbite.com</span></div></div></div>
+    <form id="contactForm" class="contact-form"><div class="form-kicker">SEND A NOTE <span>WE REPLY FAST</span></div><label>Your name<input required id="cName" placeholder="e.g. Dawar"></label><label>Your email<input type="email" required id="cEmail" placeholder="you@example.com"></label><label>What's on your mind?<textarea required id="cMsg" rows="4" placeholder="I need a cake for..." ></textarea></label><button class="btn-main" type="submit">Send message <i class="bi bi-arrow-up-right"></i></button><div id="contactStatus"></div></form></div>
+  <div class="contact-bottom"><div class="social-row"><a href="contact.html">Instagram</a><a href="contact.html">Facebook</a><a href="contact.html">TikTok</a></div><span>Karachi · PK</span></div>
+</section>
+</main>
+<footer><div class="footer-top"><a class="footer-brand navgo" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="Bakerz Bite logo"><span><b>Bakerz</b> Bite</span></a><p>Small-batch bakery magic for ordinary days that deserve a little extra.</p><a href="menu.html" class="navgo">Explore menu <i class="bi bi-arrow-up-right"></i></a></div><div class="footer-marquee"><span>FRESHLY BAKED</span><i>✦</i><span>REAL BUTTER</span><i>✦</i><span>GOOD COFFEE</span><i>✦</i><span>KARACHI</span><i>✦</i><span>SEE YOU SOON</span></div><div class="footer-bottom"><span>© 2026 Bakerz Bite</span><span>Made with care · served with heart.</span></div></footer>
+<div class="cart-backdrop"></div><aside class="cart"><div class="cart-head"><div><span>YOUR BAG</span><h3>Sweet <em>stash.</em></h3></div><button class="cart-close">×</button></div><div class="cart-body" id="cartBody"></div><div class="cart-foot"><div><span>Subtotal</span><b id="cartTotal">Rs. 0</b></div><button class="btn-main w-100" id="checkout">Ready to order <i class="bi bi-arrow-right"></i></button><small>Demo checkout · no payment is processed.</small></div></aside><div class="toast-note" id="toastNote"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+</body></html>
